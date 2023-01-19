@@ -77,6 +77,9 @@ nav {
     span {
         white-space: nowrap;
         margin-right: 8px;
+        font-family: 'DM Mono', sans-serif;
+        letter-spacing: normal;
+        font-size: 12px;
     }
 
     .divider {
@@ -199,7 +202,7 @@ nav {
         max-width: 100%;
         display: flex;
         flex-wrap: wrap;
-        @include mixins.borderRadius;
+        //@include mixins.borderRadius;
         overflow: hidden;
         justify-content: flex-start;
         align-items: flex-start;
@@ -223,7 +226,7 @@ nav {
 
     img {
         max-width: 100%;
-        @include mixins.borderRadius;
+        //@include mixins.borderRadius;
         margin-bottom: 96px;
     }
 

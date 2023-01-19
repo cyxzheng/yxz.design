@@ -32,10 +32,9 @@ a {
 }
 
 .threeGrid {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
   gap: 24px;
 }
 
@@ -78,6 +77,9 @@ nav ul li {
 .sectionHeader span {
   white-space: nowrap;
   margin-right: 8px;
+  font-family: "DM Mono", sans-serif;
+  letter-spacing: normal;
+  font-size: 12px;
 }
 .sectionHeader .divider {
   width: 100%;
@@ -182,10 +184,6 @@ nav ul li {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
-  border-width: 1px 2px 2px 1px;
-  border-style: solid;
-  border-color: #7271A6;
-  border-radius: 16px 0px;
   overflow: hidden;
   justify-content: flex-start;
   align-items: flex-start;
@@ -205,10 +203,6 @@ nav ul li {
 }
 .section img {
   max-width: 100%;
-  border-width: 1px 2px 2px 1px;
-  border-style: solid;
-  border-color: #7271A6;
-  border-radius: 16px 0px;
   margin-bottom: 96px;
 }
 .section video {
