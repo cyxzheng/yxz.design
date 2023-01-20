@@ -14,6 +14,12 @@ h1 {
   line-height: 64px;
   font-weight: 400;
 }
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
 
 h2 {
   font-size: 26px;
@@ -37,6 +43,12 @@ a {
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
   gap: 24px;
+}
+@media screen and (max-width: 640px) {
+  .threeGrid {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 nav {
@@ -74,11 +86,30 @@ nav ul a:hover {
   color: #232259;
   transition-duration: 0.5s;
 }
+@media screen and (max-width: 640px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 48px;
+  }
+  nav ul {
+    gap: 16px;
+    margin-top: 8px;
+  }
+  nav a {
+    font-size: 14px;
+  }
+}
 
 .container {
   max-width: 1080px;
   padding: 24px 48px;
   margin: 0 auto;
+}
+@media screen and (max-width: 640px) {
+  .container {
+    padding: 16px;
+  }
 }
 
 .sectionHeader {
@@ -101,6 +132,11 @@ nav ul a:hover {
 
 #hero {
   padding-bottom: 144px;
+}
+@media screen and (max-width: 640px) {
+  #hero {
+    padding-bottom: 96px;
+  }
 }
 #hero h1 {
   max-width: 680px;
@@ -149,11 +185,23 @@ nav ul a:hover {
   margin-bottom: 16px;
   margin-top: 0;
 }
+@media screen and (max-width: 640px) {
+  .project .projectTitle h2 {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
 .project .projectTitle h3 {
   font-size: 26px;
   font-size: 34px;
   margin-bottom: 16px;
   margin-top: 0;
+}
+@media screen and (max-width: 640px) {
+  .project .projectTitle h3 {
+    font-size: 22px;
+    line-height: 27px;
+  }
 }
 .project .projectTitle span {
   transition-duration: 0.5s;
@@ -523,6 +571,11 @@ nav ul a:hover {
 #recentWork {
   padding-bottom: 144px;
 }
+@media screen and (max-width: 640px) {
+  #recentWork {
+    padding-bottom: 96px;
+  }
+}
 #recentWork .project:first-of-type {
   margin-bottom: 24px;
 }
@@ -534,20 +587,42 @@ nav ul a:hover {
   line-height: 64px;
   margin-bottom: 16px;
 }
+@media screen and (max-width: 640px) {
+  #recentWork .project span {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
 
 #olderWork {
   padding-bottom: 144px;
+}
+@media screen and (max-width: 640px) {
+  #olderWork {
+    padding-bottom: 96px;
+  }
 }
 #olderWork .project span {
   font-size: 26px;
   line-height: 34px;
   margin-bottom: 16px;
 }
+@media screen and (max-width: 640px) {
+  #olderWork .project span {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
 
 #contact {
   display: flex;
   flex-direction: column;
   padding-bottom: 144px;
+}
+@media screen and (max-width: 640px) {
+  #contact {
+    padding-bottom: 96px;
+  }
 }
 #contact p {
   max-width: 680px;
@@ -573,6 +648,11 @@ nav ul a:hover {
 #yxz {
   padding-bottom: 144px;
 }
+@media screen and (max-width: 640px) {
+  #yxz {
+    padding-bottom: 96px;
+  }
+}
 #yxz a {
   text-decoration: underline;
   color: #7271A6;
@@ -582,6 +662,11 @@ nav ul a:hover {
   display: flex;
   flex-direction: column;
   margin-bottom: 144px;
+}
+@media screen and (max-width: 640px) {
+  .title {
+    margin-bottom: 96px;
+  }
 }
 .title h1 {
   margin-top: 16;
@@ -605,6 +690,11 @@ nav ul a:hover {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 640px) {
+  .section {
+    padding-bottom: 96px;
+  }
+}
 .section .imgGrid {
   background: white;
   max-width: 100%;
@@ -617,6 +707,11 @@ nav ul a:hover {
 .section .imgGrid a {
   max-width: 25%;
   line-height: 0;
+}
+@media screen and (max-width: 640px) {
+  .section .imgGrid a {
+    max-width: 50%;
+  }
 }
 .section .imgGrid a img {
   border: none;
@@ -631,12 +726,27 @@ nav ul a:hover {
   max-width: 100%;
   margin-bottom: 96px;
 }
+@media screen and (max-width: 640px) {
+  .section img {
+    margin-bottom: 24px;
+  }
+}
 .section video {
   max-width: 100%;
   margin-bottom: 96px;
 }
+@media screen and (max-width: 640px) {
+  .section video {
+    margin-bottom: 24px;
+  }
+}
 .section .notLast {
   margin-bottom: 96px !important;
+}
+@media screen and (max-width: 640px) {
+  .section .notLast {
+    margin-bottom: 24px !important;
+  }
 }
 .section video:last-of-type {
   margin-bottom: 0;
@@ -646,6 +756,11 @@ nav ul a:hover {
 }
 .section .captioned {
   margin-bottom: 16px !important;
+}
+@media screen and (max-width: 640px) {
+  .section .captioned {
+    margin-bottom: 8px !important;
+  }
 }
 .section .caption {
   font-family: "DM Mono", sans-serif;
@@ -663,10 +778,21 @@ nav ul a:hover {
   margin-bottom: 24px;
   margin-top: 0;
 }
+@media screen and (max-width: 640px) {
+  .section .textBlockHalf {
+    flex-direction: column;
+    gap: 0;
+  }
+}
 .section .textBlockHalf h2 {
   margin-top: 0;
   margin-bottom: 0;
   flex: 40%;
+}
+@media screen and (max-width: 640px) {
+  .section .textBlockHalf h2 {
+    margin-bottom: 16px;
+  }
 }
 .section .textBlockHalf h3 {
   font-size: 22px;

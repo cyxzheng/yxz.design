@@ -16,6 +16,11 @@ h1 {
     font-size: styles.$headerSize;
     line-height: styles.$headerLineheight;
     font-weight: 400;
+
+    @media screen and (max-width: mixins.$mobile) {
+        font-size: 40px;
+        line-height: 52px;
+    }
 }
 
 h2 {
@@ -76,12 +81,31 @@ nav {
             transition-duration: 0.5s;
         }
     }
+
+    @media screen and (max-width: mixins.$mobile) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 48px;
+
+        ul {
+            gap: 16px;
+            margin-top: 8px;
+        }
+
+        a {
+            font-size: 14px;
+        }
+    }
 }
 
 .container {
     max-width: 1080px;
     padding: 24px 48px;
     margin: 0 auto;
+
+    @media screen and (max-width: mixins.$mobile) {
+        padding: 16px;
+    }
 }
 
 .sectionHeader {
@@ -106,6 +130,10 @@ nav {
 
 #hero {
     padding-bottom: 144px;
+
+    @media screen and (max-width: mixins.$mobile) {
+        padding-bottom: 96px;
+    }
 
     h1 {
         max-width: 680px;
@@ -151,6 +179,11 @@ nav {
             line-height: styles.$headerLineheight;
             margin-bottom: 16px;
             margin-top: 0;
+
+            @media screen and (max-width: mixins.$mobile) {
+                font-size: 22px;
+                line-height: 27px;
+            }
         }
 
         h3 {
@@ -158,6 +191,11 @@ nav {
             font-size: styles.$subHeaderLineheight;
             margin-bottom: 16px;
             margin-top: 0;
+
+            @media screen and (max-width: mixins.$mobile) {
+                font-size: 22px;
+                line-height: 27px;
+            }
         }
 
         span {
@@ -242,6 +280,10 @@ nav {
 #recentWork {
     padding-bottom: 144px;
 
+    @media screen and (max-width: mixins.$mobile) {
+        padding-bottom: 96px;
+    }
+
     .project:first-of-type {
         margin-bottom: 24px;
     }
@@ -253,6 +295,11 @@ nav {
             font-size: styles.$headerSize;
             line-height: styles.$headerLineheight;
             margin-bottom: 16px;
+
+            @media screen and (max-width: mixins.$mobile) {
+                font-size: 22px;
+                line-height: 27px;
+            }
         }
     }
 }
@@ -260,12 +307,21 @@ nav {
 #olderWork {
     padding-bottom: 144px;
 
+    @media screen and (max-width: mixins.$mobile) {
+        padding-bottom: 96px;
+    }
+
     .project {
 
         span {
             font-size: styles.$subHeaderSize;
             line-height: styles.$subHeaderLineheight;
             margin-bottom: 16px;
+
+            @media screen and (max-width: mixins.$mobile) {
+                font-size: 22px;
+                line-height: 27px;
+            }
         }
     }
 }
@@ -274,6 +330,10 @@ nav {
     display: flex;
     flex-direction: column;
     padding-bottom: 144px;
+
+    @media screen and (max-width: mixins.$mobile) {
+        padding-bottom: 96px;
+    }
 
     p {
         max-width: 680px;
@@ -296,6 +356,10 @@ nav {
 #yxz {
     padding-bottom: 144px;
 
+    @media screen and (max-width: mixins.$mobile) {
+        padding-bottom: 96px;
+    }
+
     a {
         text-decoration: underline;
         color: styles.$grey;
@@ -308,6 +372,10 @@ nav {
     //align-items: center;
     //justify-content: space-between;
     margin-bottom: 144px;
+
+    @media screen and (max-width: mixins.$mobile) {
+        margin-bottom: 96px;
+    }
 
     h1 {
         //text-align: right;
@@ -330,6 +398,10 @@ nav {
     display: flex;
     flex-direction: column;
 
+    @media screen and (max-width: mixins.$mobile) {
+        padding-bottom: 96px;
+    }
+
     .imgGrid {
         background: white;
         max-width: 100%;
@@ -343,6 +415,10 @@ nav {
         a {
             max-width: 25%;
             line-height: 0;
+
+            @media screen and (max-width: mixins.$mobile) {
+                max-width: 50%;
+            }
 
             img {
                 border: none;
@@ -361,15 +437,27 @@ nav {
         max-width: 100%;
         //@include mixins.borderRadius;
         margin-bottom: 96px;
+
+        @media screen and (max-width: mixins.$mobile) {
+            margin-bottom: 24px;
+        }
     }
 
     video {
         max-width: 100%;
         margin-bottom: 96px;
+
+        @media screen and (max-width: mixins.$mobile) {
+            margin-bottom: 24px;
+        }
     }
 
     .notLast {
          margin-bottom: 96px  !important;
+
+         @media screen and (max-width: mixins.$mobile) {
+            margin-bottom: 24px !important;
+        }
     }
 
     video:last-of-type {
@@ -382,6 +470,10 @@ nav {
 
     .captioned {
         margin-bottom: 16px !important;
+
+        @media screen and (max-width: mixins.$mobile) {
+            margin-bottom: 8px !important;
+        }
     }
 
     .caption {
@@ -400,11 +492,20 @@ nav {
         gap: 48px;
         margin-bottom: 24px;
         margin-top: 0;
+
+        @media screen and (max-width: mixins.$mobile) {
+            flex-direction: column;
+            gap: 0;
+        }
     
         h2 {
             margin-top: 0;
             margin-bottom: 0;
             flex: 40%;
+
+            @media screen and (max-width: mixins.$mobile) {
+                margin-bottom: 16px;
+            }
         }
 
         h3 {
