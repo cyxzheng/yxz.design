@@ -64,10 +64,16 @@ nav {
 
         a {
             color: styles.$grey;
+            transition-duration: 0.5s;
         }
 
         .active {
             color: styles.$black;
+        }
+
+        a:hover {
+            color: styles.$black;
+            transition-duration: 0.5s;
         }
     }
 }
@@ -114,6 +120,10 @@ nav {
     a {
         @include mixins.link;
     }
+
+    a:hover {
+        @include mixins.linkHover;
+    }
 }
 
 .project {
@@ -123,6 +133,7 @@ nav {
     padding: 24px;
     background: styles.$white;
     flex-grow: 1;
+    transition-duration: 0.5s;
 
     p {
         margin-bottom: 0;
@@ -148,6 +159,83 @@ nav {
             margin-bottom: 16px;
             margin-top: 0;
         }
+
+        span {
+            transition-duration: 0.5s;
+        }
+    }
+}
+
+.project:hover {
+    background: none;
+    transition-duration: 0.5s;
+
+
+    span {
+        animation: bounce;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+    }
+
+    @keyframes bounce {
+        0% {transform: translateX(0px);}
+        7% {transform: translateX(8px);}
+        13% {transform: translateX(0px);}
+        18% {transform: translateX(8px);}
+        22% {transform: translateX(0px);}
+        25% {transform: translateX(8px);}
+        27% {transform: translateX(0px);}
+        28% {transform: translateX(8px);}
+        29% {transform: translateX(0px);}
+        30% {transform: translateX(8px);}
+        31% {transform: translateX(0px);}
+        32% {transform: translateX(8px);}
+        33% {transform: translateX(0px);}
+        34% {transform: translateX(8px);}
+        35% {transform: translateX(0px);}
+        36% {transform: translateX(8px);}
+        37% {transform: translateX(0px);}
+        38% {transform: translateX(8px);}
+        39% {transform: translateX(0px);}
+        40% {transform: translateX(8px);}
+        41% {transform: translateX(0px);}
+        42% {transform: translateX(8px);}
+        43% {transform: translateX(0px);}
+        44% {transform: translateX(8px);}
+        45% {transform: translateX(0px);}
+        46% {transform: translateX(8px);}
+        47% {transform: translateX(0px);}
+        48% {transform: translateX(8px);}
+        49% {transform: translateX(0px);}
+        50% {transform: translateX(8px);}
+        51% {transform: translateX(0px);}
+        52% {transform: translateX(8px);}
+        53% {transform: translateX(0px);}
+        54% {transform: translateX(8px);}
+        55% {transform: translateX(0px);}
+        56% {transform: translateX(8px);}
+        57% {transform: translateX(0px);}
+        58% {transform: translateX(8px);}
+        59% {transform: translateX(0px);}
+        60% {transform: translateX(8px);}
+        61% {transform: translateX(0px);}
+        62% {transform: translateX(8px);}
+        63% {transform: translateX(0px);}
+        64% {transform: translateX(8px);}
+        65% {transform: translateX(0px);}
+        66% {transform: translateX(8px);}
+        67% {transform: translateX(0px);}
+        68% {transform: translateX(8px);}
+        69% {transform: translateX(0px);}
+        70% {transform: translateX(8px);}
+        71% {transform: translateX(0px);}
+        73% {transform: translateX(8px);}
+        76% {transform: translateX(0px);}
+        80% {transform: translateX(8px);}
+        85% {transform: translateX(0px);}
+        91% {transform: translateX(8px);}
+        98% {transform: translateX(0px);}
     }
 }
 
@@ -187,12 +275,21 @@ nav {
     flex-direction: column;
     padding-bottom: 144px;
 
+    p {
+        max-width: 680px;
+    }
+
     a:first-of-type {
         margin-bottom: 24px;
     }
 
     a {
         @include mixins.link;
+        width: fit-content;
+    }
+
+    a:hover {
+        @include mixins.linkHover;
     }
 }
 
@@ -217,6 +314,15 @@ nav {
         margin-top: 16;
         margin-bottom: 0;
     }
+
+    a {
+        @include mixins.link;
+        text-decoration: none;
+    }
+
+    a:hover {
+        @include mixins.linkHover;
+    }
 }
 
 .section {
@@ -225,13 +331,14 @@ nav {
     flex-direction: column;
 
     .imgGrid {
+        background: white;
         max-width: 100%;
         display: flex;
         flex-wrap: wrap;
         //@include mixins.borderRadius;
         overflow: hidden;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
 
         a {
             max-width: 25%;
@@ -274,7 +381,7 @@ nav {
     }
 
     .captioned {
-        margin-bottom: 16px;
+        margin-bottom: 16px !important;
     }
 
     .caption {

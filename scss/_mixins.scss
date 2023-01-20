@@ -21,4 +21,11 @@
     font-family: 'DM Mono', sans-serif;
     font-size: 14px;
     text-decoration: underline;
+    color: styles.$grey;
+    transition-duration: 0.5s;
+}
+
+@mixin linkHover {
+    transition-duration: 0.5s;
+    color: styles.$black;
 }
