@@ -1,5 +1,7 @@
 @use 'styles';
 
+$mobile: 640px;
+
 // border radius
 @mixin borderRadius {
     border-width: 1px 2px 2px 1px;
@@ -14,6 +16,11 @@
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     gap: 24px;
+
+    @media screen and (max-width: $mobile) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 // link style
