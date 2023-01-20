@@ -32,6 +32,7 @@ p {
 
 a {
     text-decoration: none;
+    font-size: styles.$bodySize;
 }
 
 .threeGrid {
@@ -60,6 +61,14 @@ nav {
             display: inline;
             
         }
+
+        a {
+            color: styles.$grey;
+        }
+
+        .active {
+            color: styles.$black;
+        }
     }
 }
 
@@ -79,7 +88,7 @@ nav {
         margin-right: 8px;
         font-family: 'DM Mono', sans-serif;
         letter-spacing: normal;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .divider {
@@ -99,7 +108,11 @@ nav {
 
     p {
         max-width: 680px;
-        margin-bottom: 0;
+        margin-bottom: 24px;
+    }
+
+    a {
+        @include mixins.link;
     }
 }
 
@@ -177,6 +190,19 @@ nav {
     a:first-of-type {
         margin-bottom: 24px;
     }
+
+    a {
+        @include mixins.link;
+    }
+}
+
+#yxz {
+    padding-bottom: 144px;
+
+    a {
+        text-decoration: underline;
+        color: styles.$grey;
+    }
 }
 
 .title {
@@ -232,8 +258,15 @@ nav {
 
     video {
         max-width: 100%;
-        @include mixins.borderRadius;
         margin-bottom: 96px;
+    }
+
+    .notLast {
+         margin-bottom: 96px  !important;
+    }
+
+    video:last-of-type {
+        margin-bottom: 0;
     }
 
     img:last-of-type {
@@ -264,14 +297,23 @@ nav {
         h2 {
             margin-top: 0;
             margin-bottom: 0;
-            flex: 33%;
+            flex: 40%;
+        }
+
+        h3 {
+            font-size: styles.$h3size;
+            line-height: styles.$h3LineHeight;
+            margin-top: 0;
+            margin-bottom: 16px;
+            flex: 40%;
         }
     
         .paragraph {
-            flex: 66%;
+            flex: 60%;
+
     
             p {
-                margin-bottom: 8px;
+                margin-bottom: 16px;
             }
             
             p:last-of-type {

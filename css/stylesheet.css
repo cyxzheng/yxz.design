@@ -16,19 +16,20 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 26px;
+  line-height: 34px;
 }
 
 p {
-  line-height: 150%;
+  line-height: 30px;
   margin-top: 0;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 24px;
 }
 
 a {
   text-decoration: none;
+  font-size: 18px;
 }
 
 .threeGrid {
@@ -62,6 +63,12 @@ nav ul {
 nav ul li {
   display: inline;
 }
+nav ul a {
+  color: #7271A6;
+}
+nav ul .active {
+  color: #232259;
+}
 
 .container {
   max-width: 1080px;
@@ -79,7 +86,7 @@ nav ul li {
   margin-right: 8px;
   font-family: "DM Mono", sans-serif;
   letter-spacing: normal;
-  font-size: 12px;
+  font-size: 14px;
 }
 .sectionHeader .divider {
   width: 100%;
@@ -96,7 +103,12 @@ nav ul li {
 }
 #hero p {
   max-width: 680px;
-  margin-bottom: 0;
+  margin-bottom: 24px;
+}
+#hero a {
+  font-family: "DM Mono", sans-serif;
+  font-size: 14px;
+  text-decoration: underline;
 }
 
 .project {
@@ -126,8 +138,8 @@ nav ul li {
   margin-top: 0;
 }
 .project .projectTitle h3 {
-  font-size: 24px;
-  font-size: 32px;
+  font-size: 26px;
+  font-size: 34px;
   margin-bottom: 16px;
   margin-top: 0;
 }
@@ -151,8 +163,8 @@ nav ul li {
   padding-bottom: 144px;
 }
 #olderWork .project span {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 26px;
+  line-height: 34px;
   margin-bottom: 16px;
 }
 
@@ -163,6 +175,19 @@ nav ul li {
 }
 #contact a:first-of-type {
   margin-bottom: 24px;
+}
+#contact a {
+  font-family: "DM Mono", sans-serif;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+#yxz {
+  padding-bottom: 144px;
+}
+#yxz a {
+  text-decoration: underline;
+  color: #7271A6;
 }
 
 .title {
@@ -207,11 +232,13 @@ nav ul li {
 }
 .section video {
   max-width: 100%;
-  border-width: 1px 2px 2px 1px;
-  border-style: solid;
-  border-color: #7271A6;
-  border-radius: 16px 0px;
   margin-bottom: 96px;
+}
+.section .notLast {
+  margin-bottom: 96px !important;
+}
+.section video:last-of-type {
+  margin-bottom: 0;
 }
 .section img:last-of-type {
   margin-bottom: 0;
@@ -238,13 +265,20 @@ nav ul li {
 .section .textBlockHalf h2 {
   margin-top: 0;
   margin-bottom: 0;
-  flex: 33%;
+  flex: 40%;
+}
+.section .textBlockHalf h3 {
+  font-size: 22px;
+  line-height: 27px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  flex: 40%;
 }
 .section .textBlockHalf .paragraph {
-  flex: 66%;
+  flex: 60%;
 }
 .section .textBlockHalf .paragraph p {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .section .textBlockHalf .paragraph p:last-of-type {
   margin-bottom: 0;
