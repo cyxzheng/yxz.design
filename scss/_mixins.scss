@@ -15,3 +15,10 @@
     grid-auto-columns: 1fr;
     gap: 24px;
 }
+
+// link style
+@mixin link {
+    font-family: 'DM Mono', sans-serif;
+    font-size: 14px;
+    text-decoration: underline;
+}
