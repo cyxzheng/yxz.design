@@ -809,4 +809,23 @@ nav ul a:hover {
 }
 .section .textBlockHalf .paragraph p:last-of-type {
   margin-bottom: 0;
+}
+
+#about {
+  padding-bottom: 144px;
+}
+#about .textBlockAbout {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+#about .textBlockAbout img {
+  width: 40%;
+}
+#about .textBlockAbout .aboutText h1 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+#about .textBlockAbout .aboutText p {
+  margin-bottom: 16px;
 }/*# sourceMappingURL=stylesheet.css.map */
