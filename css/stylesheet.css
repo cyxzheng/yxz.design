@@ -1,18 +1,18 @@
 body {
-  background: #F7FBFC;
+  background: #FAFBFF;
 }
 
 h1, h2, h3, p, span, a, li {
   font-family: "DM Sans", sans-serif;
-  color: #232259;
+  color: #434770;
   font-weight: 400;
-  letter-spacing: -0.01em;
 }
 
 h1 {
   font-size: 48px;
   line-height: 64px;
   font-weight: 400;
+  letter-spacing: -0.03em;
 }
 @media screen and (max-width: 640px) {
   h1 {
@@ -24,13 +24,19 @@ h1 {
 h2 {
   font-size: 26px;
   line-height: 34px;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  letter-spacing: -0.03em;
 }
 
 p {
-  line-height: 30px;
+  line-height: 32px;
   margin-top: 0;
   font-size: 18px;
   margin-bottom: 24px;
+  letter-spacing: -0.02em;
 }
 
 a {
@@ -54,7 +60,7 @@ a {
 nav {
   border-width: 1px 2px 2px 1px;
   border-style: solid;
-  border-color: #7271A6;
+  border-color: #737BC9;
   border-radius: 16px 0px;
   display: flex;
   justify-content: space-between;
@@ -76,14 +82,14 @@ nav ul li {
   display: inline;
 }
 nav ul a {
-  color: #7271A6;
+  color: #737BC9;
   transition-duration: 0.5s;
 }
 nav ul .active {
-  color: #232259;
+  color: #434770;
 }
 nav ul a:hover {
-  color: #232259;
+  color: #434770;
   transition-duration: 0.5s;
 }
 @media screen and (max-width: 640px) {
@@ -123,11 +129,12 @@ nav ul a:hover {
   font-family: "DM Mono", sans-serif;
   letter-spacing: normal;
   font-size: 14px;
+  color: #737BC9;
 }
 .sectionHeader .divider {
   width: 100%;
   height: 1px;
-  background: #7271A6;
+  background: #737BC9;
 }
 
 #hero {
@@ -139,7 +146,9 @@ nav ul a:hover {
   }
 }
 #hero h1 {
-  max-width: 680px;
+  font-size: 64px;
+  line-height: 76px;
+  width: 100%;
   margin-bottom: 24px;
 }
 #hero p {
@@ -150,18 +159,18 @@ nav ul a:hover {
   font-family: "DM Mono", sans-serif;
   font-size: 14px;
   text-decoration: underline;
-  color: #7271A6;
+  color: #737BC9;
   transition-duration: 0.5s;
 }
 #hero a:hover {
   transition-duration: 0.5s;
-  color: #232259;
+  color: #434770;
 }
 
 .project {
   border-width: 1px 2px 2px 1px;
   border-style: solid;
-  border-color: #7271A6;
+  border-color: #737BC9;
   border-radius: 16px 0px;
   display: flex;
   flex-direction: column;
@@ -180,8 +189,8 @@ nav ul a:hover {
   justify-content: space-between;
 }
 .project .projectTitle h2 {
-  font-size: 48px;
-  line-height: 64px;
+  font-size: 40px;
+  line-height: 48px;
   margin-bottom: 16px;
   margin-top: 0;
 }
@@ -205,6 +214,12 @@ nav ul a:hover {
 }
 .project .projectTitle span {
   transition-duration: 0.5s;
+}
+
+.hoverShow {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .project:hover {
@@ -583,8 +598,8 @@ nav ul a:hover {
   max-width: 100%;
 }
 #recentWork .project span {
-  font-size: 48px;
-  line-height: 64px;
+  font-size: 40px;
+  line-height: 48px;
   margin-bottom: 16px;
 }
 @media screen and (max-width: 640px) {
@@ -634,7 +649,7 @@ nav ul a:hover {
   font-family: "DM Mono", sans-serif;
   font-size: 14px;
   text-decoration: underline;
-  color: #7271A6;
+  color: #737BC9;
   transition-duration: 0.5s;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -642,7 +657,7 @@ nav ul a:hover {
 }
 #contact a:hover {
   transition-duration: 0.5s;
-  color: #232259;
+  color: #434770;
 }
 
 #yxz {
@@ -655,7 +670,7 @@ nav ul a:hover {
 }
 #yxz a {
   text-decoration: underline;
-  color: #7271A6;
+  color: #737BC9;
 }
 
 .title {
@@ -676,13 +691,13 @@ nav ul a:hover {
   font-family: "DM Mono", sans-serif;
   font-size: 14px;
   text-decoration: underline;
-  color: #7271A6;
+  color: #737BC9;
   transition-duration: 0.5s;
   text-decoration: none;
 }
 .title a:hover {
   transition-duration: 0.5s;
-  color: #232259;
+  color: #434770;
 }
 
 .section {

@@ -9,13 +9,13 @@ h1, h2, h3, p, span, a, li {
     font-family: 'DM Sans', sans-serif;
     color: styles.$black;
     font-weight: 400;
-    letter-spacing: -0.01em;
 }
 
 h1 {
     font-size: styles.$headerSize;
     line-height: styles.$headerLineheight;
     font-weight: 400;
+    letter-spacing: -0.03em;
 
     @media screen and (max-width: mixins.$mobile) {
         font-size: 40px;
@@ -26,6 +26,11 @@ h1 {
 h2 {
     font-size: styles.$subHeaderSize;
     line-height: styles.$subHeaderLineheight;
+    letter-spacing: -0.03em;
+}
+
+h3 {
+    letter-spacing: -0.03em;
 }
 
 p {
@@ -33,6 +38,7 @@ p {
     margin-top: 0;
     font-size: styles.$bodySize;
     margin-bottom: 24px;
+    letter-spacing: -0.02em;
 }
 
 a {
@@ -119,6 +125,7 @@ nav {
         font-family: 'DM Mono', sans-serif;
         letter-spacing: normal;
         font-size: 14px;
+        color: styles.$grey;
     }
 
     .divider {
@@ -136,7 +143,9 @@ nav {
     }
 
     h1 {
-        max-width: 680px;
+        font-size: 64px;
+        line-height: 76px;
+        width: 100%;
         margin-bottom: 24px;
     }
 
@@ -175,8 +184,8 @@ nav {
 
         
         h2 {
-            font-size: styles.$headerSize;
-            line-height: styles.$headerLineheight;
+            font-size: 40px;
+            line-height: 48px;
             margin-bottom: 16px;
             margin-top: 0;
 
@@ -202,6 +211,12 @@ nav {
             transition-duration: 0.5s;
         }
     }
+}
+
+.hoverShow {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .project:hover {
@@ -292,8 +307,8 @@ nav {
         max-width: 100%;
 
         span {
-            font-size: styles.$headerSize;
-            line-height: styles.$headerLineheight;
+            font-size: 40px;
+            line-height: 48px;
             margin-bottom: 16px;
 
             @media screen and (max-width: mixins.$mobile) {
